@@ -1,6 +1,6 @@
 javascript:(function(){
     const link = document.createElement("a");
-    link.href = $("audio source").src;
+    link.href = document.querySelector("audio source").src;
     link.setAttribute("target", "_blank");
-    setTimeout(()=>link.click(), 100);
+    setTimeout(function(){link.click()}, 100);
 })();
